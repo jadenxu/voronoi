@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="starburst">
+      <file>forward.png</file>
+      <file>restart.png</file>
+      <file>voronoi.png</file>
+      <file>power.png</file>
+      <file>apollonius.png</file>
+      <file>circle.png</file>
+      <file>dynamic.png</file>
+    </qresource>
+</RCC>

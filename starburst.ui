@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>starburstClass</class>
+ <widget class="QMainWindow" name="starburstClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>starburst</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="my_qlabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>481</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionRestart"/>
+   <addaction name="actionDynamic"/>
+   <addaction name="actionVoronoi"/>
+   <addaction name="actionPower"/>
+   <addaction name="actionApollonius"/>
+   <addaction name="actionCircle"/>
+   <addaction name="actionIteration"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionVoronoi">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="starburst.qrc">
+     <normaloff>:/starburst/voronoi.png</normaloff>:/starburst/voronoi.png</iconset>
+   </property>
+   <property name="text">
+    <string>voronoi</string>
+   </property>
+  </action>
+  <action name="actionRestart">
+   <property name="icon">
+    <iconset resource="starburst.qrc">
+     <normaloff>:/starburst/restart.png</normaloff>:/starburst/restart.png</iconset>
+   </property>
+   <property name="text">
+    <string>restart</string>
+   </property>
+  </action>
+  <action name="actionPower">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="starburst.qrc">
+     <normaloff>:/starburst/power.png</normaloff>:/starburst/power.png</iconset>
+   </property>
+   <property name="text">
+    <string>power</string>
+   </property>
+  </action>
+  <action name="actionCircle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="starburst.qrc">
+     <normaloff>:/starburst/circle.png</normaloff>:/starburst/circle.png</iconset>
+   </property>
+   <property name="text">
+    <string>circle</string>
+   </property>
+  </action>
+  <action name="actionApollonius">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="starburst.qrc">
+     <normaloff>:/starburst/apollonius.png</normaloff>:/starburst/apollonius.png</iconset>
+   </property>
+   <property name="text">
+    <string>apollonius</string>
+   </property>
+  </action>
+  <action name="actionDynamic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="starburst.qrc">
+     <normaloff>:/starburst/dynamic.png</normaloff>:/starburst/dynamic.png</iconset>
+   </property>
+   <property name="text">
+    <string>dynamic</string>
+   </property>
+  </action>
+  <action name="actionIteration">
+   <property name="icon">
+    <iconset resource="starburst.qrc">
+     <normaloff>:/starburst/forward.png</normaloff>:/starburst/forward.png</iconset>
+   </property>
+   <property name="text">
+    <string>iteration</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>my_qlabel</class>
+   <extends>QLabel</extends>
+   <header location="global">my_qlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="starburst.qrc"/>
+ </resources>
+ <connections/>
+</ui>
